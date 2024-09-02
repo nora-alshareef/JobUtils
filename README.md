@@ -13,6 +13,34 @@
 5. **Cancellation Support**: Proper handling of cancellation requests.
 6. **Time Unit Flexibility**: Delays and timeouts can be specified in various time units (seconds, minutes, hours, days) through configuration. Simply use the appropriate suffix (e.g., `DelaySeconds`, `ErrorDelayMinutes`, `IterationTimeoutHours`) in your configuration, and adjust your `GetDelayTime` and `GetErrorDelayTime` implementations accordingly.
 
+## Installation
+
+### Build and Use the Library
+
+Clone and build the repository:
+```bash
+git clone https://github.com/nora-alshareef/JobUtils
+cd JobUtils
+dotnet build
+dotnet pack
+```
+Add Reference to the JobUtils DLL
+To add a reference to the JobUtils DLL in your project, follow these steps:
+1. Right-click on your project in the Solution Explorer.
+2. Select "Add" > "Reference".
+3. In the Reference Manager dialog, click on "Browse".
+4. Navigate to the location of the Job Utils DLL file.
+5. Select the DLL file (e.g., "JobUtils.dll") and click "Add".
+6. Click "OK" in the Reference Manager dialog to confirm.
+
+
+Alternatively, if you're using the command line or prefer editing the .csproj file directly, you can add the following line within an <ItemGroup> in your project file:
+```xml
+<Reference Include="JobUtils">
+    <HintPath>path\to\JobUtils.dll</HintPath>
+</Reference>
+```
+
 ## How to Use
 
 ### 1. Create a Worker Class
