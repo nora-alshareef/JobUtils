@@ -22,7 +22,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
-
+*.sln
 # .NET Core
 project.lock.json
 project.fragment.lock.json
