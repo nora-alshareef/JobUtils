@@ -4,4 +4,4 @@ obj/
 *.user
 *.nupkg
 .idea/
-pack.md
+pack.md.DS_Store
